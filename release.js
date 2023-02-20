@@ -58,6 +58,7 @@ const input = require('prompt');
 const format = require('json-format')
 const packageData = require('./package.json')
 const proc = require('child_process')
+const path = require("path");
 
 
 function getNextVersion() {
@@ -83,6 +84,7 @@ getInput([{
 }, 'commit']).then(result => {
     console.log(result)
     packageData.version = result.version;
+    fs.writeFileSync(path.join(__dirname, 'package.json'), format(packageData), {encoding: 'utf-8'})
     proc.execSync('git add .')
     proc.execSync(`git commit -m "${result.commit || 'push version ' + result.version}"`)
     console.log("start push code...")
