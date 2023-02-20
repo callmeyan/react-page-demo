@@ -1,4 +1,4 @@
-const GITHUB_API_URL = "https://raw.githubusercontent.com/callmeyan/react-page-demo/data/"
+const GITHUB_API_URL = "https://raw.githubusercontent.com/callmeyan/react-page-demo/data"
 
 interface _Article {
     id: number

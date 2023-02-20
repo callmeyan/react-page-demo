@@ -36,6 +36,7 @@ h1 {
     font-size: 3.2em;
     line-height: 1.1;
 }
+
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
@@ -96,25 +97,44 @@ h1 {
 .read-the-docs {
     color: #888;
 }
-.article-list{
+
+.article-list {
     border: solid 1px #eee;
     border-radius: 4px;
     text-align: left;
 }
-.article-item{
+
+.article-item {
     padding: 10px 15px;
     border-bottom: solid 1px #eee;
 }
-.article-item:hover{
-    background-color: rgba(60,150,200,0.05);
+
+.article-item:hover {
+    background-color: rgba(60, 150, 200, 0.05);
 }
-.article-item:last-child{
+
+.article-item:last-child {
     border-bottom: none;
 }
-.article-item .title{
+
+.article-item .title {
     font-size: 16px;
 }
-.article-item .info{
-    color: rgba(0,0,0,0.5);
+
+.article-item .info {
+    color: rgba(0, 0, 0, 0.5);
     font-size: 12px;
+}
+
+.app-logo a {
+
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        display: block;
+    }
+    .app-logo a .logo{
+        height: 3em;
+    }
 }

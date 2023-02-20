@@ -15,7 +15,7 @@ const Detail: React.FC = () => {
         {error ? (<h1>Error:{error.message}</h1>) : (
             loading ? <Spin/> : <div>
                 <div className="content">{data?.content}</div>
-                <div className="back"><Button onClick={() => nav(-1)}>Back</Button></div>
+                <div className="back" style={{marginTop:20}}><Button onClick={() => nav(-1)}>Back</Button></div>
             </div>
         )}
     </div>)

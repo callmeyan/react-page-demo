@@ -15,7 +15,7 @@ const ArticleList: React.FC<{ articles?: ArticleListItem[] }> = (props) => {
     </div>)
 }
 const Index: React.FC = () => {
-    const {data, loading} = useRequest(articleList)
+    const {data, loading} = useRequest(articleList, {cacheKey: 'article-list'})
 
     return (<div className="articles">
         {loading ? <Spin/> : <ArticleList articles={data}/>}

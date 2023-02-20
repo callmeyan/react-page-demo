@@ -14,7 +14,7 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src')
         }
     },
-    base: isDEV ? '/' : 'https://callmeyan.github.io/react-page-demo/',
+    base: isDEV ? '/' : './',
     build: {
         outDir: 'docs'
     }

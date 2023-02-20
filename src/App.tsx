@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Button} from 'antd'
 import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import {createHashRouter,RouterProvider} from "react-router-dom";
 import Index from "./pages";
 import Detail from "./pages/detail";
@@ -15,9 +16,9 @@ function App() {
     const [count, setCount] = useState(0)
     return (
         <div className="App">
-            <div>
+            <div className="app-logo">
                 <a href="https://vitejs.dev" target="_blank">
-                    <img src="/vite.svg" className="logo" alt="Vite logo"/>
+                    <img src={viteLogo} className="logo" alt="Vite logo"/>
                 </a>
                 <a href="https://reactjs.org" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo"/>
